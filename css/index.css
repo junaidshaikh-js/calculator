@@ -1,91 +1,91 @@
 /* css reset */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* variables */
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --light-grey: #d8d9db;
-    --btn-hover: #ebebeb;
-    --btn-active: #bbbcbe;
-    --function-btn: #df974c;
-    --function-btn-hover: #dfb07e;
-    --function-btn-active: #dd8d37;
+  --black: #000000;
+  --white: #ffffff;
+  --light-grey: #d8d9db;
+  --btn-hover: #ebebeb;
+  --btn-active: #bbbcbe;
+  --function-btn: #df974c;
+  --function-btn-hover: #dfb07e;
+  --function-btn-active: #dd8d37;
 }
 
 /* calculator styling */
 button {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
 }
 
 button:not(.fn-btn) {
-    background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
 button:not(.fn-btn):hover {
-    background-color: var(--btn-hover);
+  background-color: var(--btn-hover);
 }
 
-button:not(.fn-btn):active{
-    background-color: var(--btn-active);
+button:not(.fn-btn):active {
+  background-color: var(--btn-active);
 }
 
 .fn-btn {
-    background-color: var(--function-btn);
-    color: white;
+  background-color: var(--function-btn);
+  color: white;
 }
 
 .fn-btn:hover {
-    background-color: var(--function-btn-hover);
+  background-color: var(--function-btn-hover);
 }
 
 .fn-btn:active {
-    background-color: var(--function-btn-active);
+  background-color: var(--function-btn-active);
 }
 
 .calculator {
-    max-width: 348px;
-    /* margin: 0 auto; */
-    background-color: var(--black); 
-    display: flex;
-    flex-flow: column nowrap;
-}  
+  max-width: 100%;
+  width: 348px;
+  background-color: var(--black);
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .calc-buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, minmax(3.5rem, 1fr));
-    gap: 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, minmax(3.5rem, 1fr));
+  gap: 0.2rem;
 }
 
 .screen {
-    line-height: 2;
-    font-size: 2rem;    
-    font-family: 'Courier New', Courier, monospace;
+  line-height: 2;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 button:first-child {
-    grid-area: 1/1/2/3;;
+  grid-area: 1/1/2/3;
 }
 
 button:nth-last-child(2) {
-    grid-area: 5/1/6/4;
+  grid-area: 5/1/6/4;
 }
